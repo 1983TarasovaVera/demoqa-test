@@ -1,4 +1,4 @@
-package com.vera.tarasova;
+package com.veraTarasova;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
@@ -9,14 +9,13 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class DemoQATests {
+public class PracticFormTests {
 
     @BeforeAll
     static void BeforeAll() {
         Configuration.browserSize = "2100x1080";
         Configuration.baseUrl = "https://demoqa.com";
     }
-
 
     @Test
     void fillFormTest() {
@@ -33,11 +32,7 @@ public class DemoQATests {
         String state = "NCR";
         String city = "Delhi";
 
-        //Открытие веб-формы
         open(url);
-
-        // Заполнение полей формы
-
         $("#firstName").setValue(firstName);
         $("#lastName").setValue(lastName);
         $("#userEmail").setValue(mail);
@@ -55,8 +50,6 @@ public class DemoQATests {
         $("#stateCity-wrapper").$(byText(state)).click();
         $("#city").click();
         $("#stateCity-wrapper").$(byText(city)).click();
-
-        //Сохранение формы
         $("#submit").pressEnter();
 
         //Проверка сохранения введенных данных в итоговой таблице
@@ -70,8 +63,5 @@ public class DemoQATests {
         $(".table-responsive").$(byText("Picture")).parent().shouldHave(Condition.text("1.jpg"));
         $(".table-responsive").$(byText("Address")).parent().shouldHave(Condition.text(address));
         $(".table-responsive").$(byText("State and City")).parent().shouldHave(Condition.text(state + " " + city));
-
-
     }
-
 }
