@@ -14,7 +14,6 @@ public class TestBase {
     static void BeforeAll() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
         DesiredCapabilities capabilities = new DesiredCapabilities();
-
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
@@ -30,5 +29,4 @@ public class TestBase {
         Attach.browserConsoleLogs();
         Attach.addVideo();
     }
-
 }
