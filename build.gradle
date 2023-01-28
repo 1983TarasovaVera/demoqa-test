@@ -26,6 +26,7 @@ dependencies {
     testImplementation(
             'org.junit.jupiter:junit-jupiter-api:5.7.2',
             'org.junit.jupiter:junit-jupiter-params:5.7.2',
+            "com.github.javafaker:javafaker:1.0.2",
             'io.qameta.allure:allure-selenide:2.15.0',
             'com.codeborne:selenide:5.22.3',
             'org.aspectj:aspectjweaver:1.9.6'
