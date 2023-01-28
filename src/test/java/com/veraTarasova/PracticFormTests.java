@@ -44,8 +44,6 @@ public class PracticFormTests {
 
         step("1. открыть веб-форму", () -> {
             open(url);
-            takeScreenshot();
-            takePageSource();
         });
         step("2. заполнить форму", () -> {
             $("#firstName").setValue(firstName);
