@@ -56,13 +56,9 @@ public class PracticFormTests extends TestBase{
             $("#stateCity-wrapper").$(byText(state)).click();
             $("#city").scrollTo().click();
             $("#stateCity-wrapper").$(byText(city)).click();
-            takeScreenshot();
-            takePageSource();
         });
         step("3. сохранить форму", () -> {
             $("#submit").pressEnter();
-            takeScreenshot();
-            takePageSource();
         });
         step("4. проверить сохранение данных", () -> {
             $(".table-responsive").$(byText("Student Name")).parent().shouldHave(Condition.text(firstName + " " + lastName));
@@ -75,16 +71,6 @@ public class PracticFormTests extends TestBase{
             $(".table-responsive").$(byText("Picture")).parent().shouldHave(Condition.text("1.jpg"));
             $(".table-responsive").$(byText("Address")).parent().shouldHave(Condition.text(address));
             $(".table-responsive").$(byText("State and City")).parent().shouldHave(Condition.text(state + " " + city));
-            takeScreenshot();
-            takePageSource();
         });
-    }
-    @Attachment(value = "Скриншот", type = "image/png")
-    public byte[] takeScreenshot () {
-        return Selenide.screenshot(OutputType.BYTES);
-    }
-    @Attachment(value = "Страница", type = "text/html")
-    public byte[] takePageSource() {
-        return WebDriverRunner.getWebDriver().getPageSource().getBytes(StandardCharsets.UTF_8);
     }
 }
