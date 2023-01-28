@@ -1,4 +1,4 @@
-package com.veraTarasova;
+package com.veraTarasova.tests;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
@@ -18,14 +18,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-public class PracticFormTests {
-
-    @BeforeAll
-    static void BeforeAll() {
-        Configuration.browserSize = "2100x1080";
-        Configuration.baseUrl = "https://demoqa.com";
-        SelenideLogger.addListener("AllureSelenide", new AllureSelenide());
-    }
+public class PracticFormTests extends TestBase{
 
     @Test
     void fillFormTest() {
