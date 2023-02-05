@@ -32,7 +32,7 @@ public class TestBase {
         capabilities.setCapability("enableVideo", true);
         Configuration.browserCapabilities = capabilities;
         Configuration.remote = credentials + url;
-        Configuration.browser = browser;
+//        Configuration.browser = browser;
         Configuration.browserSize = browserSize;
 //        Configuration.browserVersion = version;
         Configuration.baseUrl = "https://demoqa.com";
