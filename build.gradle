@@ -27,13 +27,42 @@ dependencies {
             'org.junit.jupiter:junit-jupiter-api:5.7.2',
             'org.junit.jupiter:junit-jupiter-params:5.7.2',
             "com.github.javafaker:javafaker:1.0.2",
+            "org.aeonbits.owner:owner:1.0.12",
             'io.qameta.allure:allure-selenide:2.15.0',
             'com.codeborne:selenide:5.22.3',
             'org.aspectj:aspectjweaver:1.9.6'
     )
-    testRuntimeOnly('org.junit.jupiter:junit-jupiter-engine:5.7.2')
+    testRuntimeOnly(
+            "org.slf4j:slf4j-simple:1.7.29",
+            'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    )
 }
 
-test {
+java {
+    compileJava.options.encoding = 'UTF-8'
+    compileTestJava.options.encoding = 'UTF-8'
+}
+
+tasks.withType(Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform()
+
+    testLogging {
+        lifecycle {
+            events "started", "skipped", "failed", "standard_error", "standard_out"
+            exceptionFormat "short"
+        }
+    }
+}
+
+task properties_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags ("properties")
+    }
+}
+
+task ui_tests(type: Test) {
+    useJUnitPlatform {
+        includeTags ("ui-tests")
+    }
 }

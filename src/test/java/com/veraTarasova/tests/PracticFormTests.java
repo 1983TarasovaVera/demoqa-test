@@ -1,6 +1,7 @@
 package com.veraTarasova.tests;
 
 import com.veraTarasova.pages.RegistrationPage;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.veraTarasova.tests.TestData.*;
@@ -10,6 +11,7 @@ public class PracticFormTests extends TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
 
     @Test
+    @Tag("ui-tests")
     void fillFormTest() {
     
         step("1. открыть веб-форму", () -> {
