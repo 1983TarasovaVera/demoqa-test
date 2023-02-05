@@ -19,8 +19,8 @@ public class TestBase {
     static String login = credentialsConfig.login();
     static String password = credentialsConfig.password();
     static String credentials = format("https://%s:%s@",login,password);
-    static String browser = System.getProperty("browser", "CHROME");
-    static String version = System.getProperty("version", "91");
+    static String browser = System.getProperty("browser", "chrome");
+    static String version = System.getProperty("version", "100.0.4896.60");
     static String browserSize = System.getProperty("browserSize", "2100x1080");
     static String url = System.getProperty("url","selenoid.autotests.cloud/wd/hub/");
 
@@ -34,7 +34,7 @@ public class TestBase {
         Configuration.remote = credentials + url;
         Configuration.browser = browser;
         Configuration.browserSize = browserSize;
-        Configuration.browserVersion = version;
+//        Configuration.browserVersion = version;
         Configuration.baseUrl = "https://demoqa.com";
     }
 
