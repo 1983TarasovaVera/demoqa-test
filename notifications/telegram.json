@@ -1,7 +1,7 @@
 {
   "base": {
     "project": "some project",
-    "environment": "some env",
+    "environment": "some environment",
     "comment": "some comment",
     "reportLink": "",
     "language": "en",
