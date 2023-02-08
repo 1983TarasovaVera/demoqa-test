@@ -1,0 +1,81 @@
+[ {
+  "uid" : "5d4d1f51815049c1",
+  "name" : "someTest3()",
+  "time" : {
+    "start" : 1675660884509,
+    "stop" : 1675660884510,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "84c7cac61503e699",
+  "name" : "readCredentialTest()",
+  "time" : {
+    "start" : 1675660884224,
+    "stop" : 1675660884317,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bc599469501de77c",
+  "name" : "someTest()",
+  "time" : {
+    "start" : 1675660884547,
+    "stop" : 1675660884549,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "d40c03e4e3b8cc5e",
+  "name" : "someTest4()",
+  "time" : {
+    "start" : 1675660884519,
+    "stop" : 1675660884522,
+    "duration" : 3
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71b7df9a68717004",
+  "name" : "fillFormTest()",
+  "time" : {
+    "start" : 1675660884799,
+    "stop" : 1675661009148,
+    "duration" : 124349
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c0f5f50cd85edac6",
+  "name" : "someTest1()",
+  "time" : {
+    "start" : 1675660884489,
+    "stop" : 1675660884491,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "777d00de912088cb",
+  "name" : "someTest5()",
+  "time" : {
+    "start" : 1675660884532,
+    "stop" : 1675660884534,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a38f07525b9a07e9",
+  "name" : "someTest2()",
+  "time" : {
+    "start" : 1675660884498,
+    "stop" : 1675660884502,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

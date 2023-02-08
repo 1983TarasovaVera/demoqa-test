@@ -1,0 +1,37 @@
+{
+  "total" : 3,
+  "items" : [ {
+    "uid" : "81b81507bc50bf6906038bd5843f3257",
+    "name" : "com.veraTarasova.properties.SystemPropertiesTests",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 6,
+      "unknown" : 0,
+      "total" : 6
+    }
+  }, {
+    "uid" : "91761eda64c4cc9daacfde2ff4d7ca54",
+    "name" : "com.veraTarasova.properties.OwnerTests",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "cb40f9f0f051fb8d60f55ab5faa843ed",
+    "name" : "com.veraTarasova.tests.PracticFormTests",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
+}
