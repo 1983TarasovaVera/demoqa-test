@@ -3,7 +3,7 @@
     "project": "${JOB_BASE_NAME}",
     "environment": "some environment",
     "comment": "some comment",
-    "reportLink": "${BUILD_URL}",
+    "reportLink": "",
     "language": "en",
     "allureFolder": "telegram",
     "enableChart": true
